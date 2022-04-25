@@ -1,0 +1,490 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "metro-ua";
+  src:url("fonts/metro-ua.eot");
+  src:url("fonts/metro-ua.eot?#iefix") format("embedded-opentype"),
+    url("fonts/metro-ua.woff") format("woff"),
+    url("fonts/metro-ua.ttf") format("truetype"),
+    url("fonts/metro-ua.svg#metro-ua") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "metro-ua" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="metro-"]:before,
+[class*=" metro-"]:before {
+  font-family: "metro-ua" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.metro-advantages:before {
+  content: "\61";
+}
+.metro-alert-error-small:before {
+  content: "\62";
+}
+.metro-alert-success-small:before {
+  content: "\63";
+}
+.metro-alert-warning-small:before {
+  content: "\64";
+}
+.metro-all-apps:before {
+  content: "\65";
+}
+.metro-arrow-down:before {
+  content: "\67";
+}
+.metro-arrow-left:before {
+  content: "\68";
+}
+.metro-arrow-left-1:before {
+  content: "\69";
+}
+.metro-arrow-right:before {
+  content: "\6a";
+}
+.metro-arrow-up:before {
+  content: "\6b";
+}
+.metro-arrow-up-1:before {
+  content: "\6c";
+}
+.metro-block:before {
+  content: "\6d";
+}
+.metro-category-chemicals:before {
+  content: "\6e";
+}
+.metro-category-canned-food-oil-vinegar:before {
+  content: "\6f";
+}
+.metro-category-bakery:before {
+  content: "\70";
+}
+.metro-category-babies:before {
+  content: "\71";
+}
+.metro-category-alcohol:before {
+  content: "\72";
+}
+.metro-card-2:before {
+  content: "\73";
+}
+.metro-card:before {
+  content: "\74";
+}
+.metro-cancel-big:before {
+  content: "\75";
+}
+.metro-calender:before {
+  content: "\76";
+}
+.metro-business:before {
+  content: "\77";
+}
+.metro-broshures:before {
+  content: "\78";
+}
+.metro-bookable-services:before {
+  content: "\79";
+}
+.metro-block-2:before {
+  content: "\7a";
+}
+.metro-category-clothes-and-accessories:before {
+  content: "\41";
+}
+.metro-category-dairy-and-eggs:before {
+  content: "\42";
+}
+.metro-category-drinks:before {
+  content: "\43";
+}
+.metro-category-electronics:before {
+  content: "\44";
+}
+.metro-category-for-animals:before {
+  content: "\45";
+}
+.metro-category-frozen:before {
+  content: "\46";
+}
+.metro-category-fruits-and-vegetables:before {
+  content: "\47";
+}
+.metro-category-gardening:before {
+  content: "\48";
+}
+.metro-category-grocery:before {
+  content: "\49";
+}
+.metro-category-hobby-and-rest:before {
+  content: "\4a";
+}
+.metro-category-home-interior-and-textiles:before {
+  content: "\4b";
+}
+.metro-category-household:before {
+  content: "\4c";
+}
+.metro-category-household-goods:before {
+  content: "\4d";
+}
+.metro-category-kitchenware:before {
+  content: "\4e";
+}
+.metro-category-meat-fish-poultry:before {
+  content: "\4f";
+}
+.metro-category-office:before {
+  content: "\50";
+}
+.metro-category-packets-cereals:before {
+  content: "\51";
+}
+.metro-category-personal-care-cosmetics-perfumes:before {
+  content: "\52";
+}
+.metro-category-personal-hygiene:before {
+  content: "\53";
+}
+.metro-category-sauces-and-spices:before {
+  content: "\54";
+}
+.metro-category-snacks-and-sweets:before {
+  content: "\55";
+}
+.metro-category-stationery:before {
+  content: "\56";
+}
+.metro-category-tobacco:before {
+  content: "\57";
+}
+.metro-check-1:before {
+  content: "\59";
+}
+.metro-check-large:before {
+  content: "\5a";
+}
+.metro-check-small:before {
+  content: "\30";
+}
+.metro-chevron-down:before {
+  content: "\31";
+}
+.metro-chevron-down-2:before {
+  content: "\32";
+}
+.metro-chevron-down-small:before {
+  content: "\33";
+}
+.metro-chevron-left:before {
+  content: "\34";
+}
+.metro-chevron-left-double:before {
+  content: "\35";
+}
+.metro-chevron-left-small:before {
+  content: "\36";
+}
+.metro-chevron-left-small-1:before {
+  content: "\37";
+}
+.metro-chevron-right:before {
+  content: "\38";
+}
+.metro-chevron-right-1:before {
+  content: "\39";
+}
+.metro-chevron-right-double:before {
+  content: "\21";
+}
+.metro-chevron-right-small:before {
+  content: "\22";
+}
+.metro-chevron-up:before {
+  content: "\23";
+}
+.metro-chevron-up-small:before {
+  content: "\24";
+}
+.metro-clock:before {
+  content: "\25";
+}
+.metro-close:before {
+  content: "\26";
+}
+.metro-dashboard:before {
+  content: "\27";
+}
+.metro-delivery:before {
+  content: "\28";
+}
+.metro-dialog:before {
+  content: "\29";
+}
+.metro-documents:before {
+  content: "\2a";
+}
+.metro-download:before {
+  content: "\2b";
+}
+.metro-drag-drop-large:before {
+  content: "\2c";
+}
+.metro-eac-app:before {
+  content: "\2d";
+}
+.metro-edit:before {
+  content: "\2e";
+}
+.metro-edit-small:before {
+  content: "\2f";
+}
+.metro-envelope:before {
+  content: "\3a";
+}
+.metro-error-large:before {
+  content: "\3b";
+}
+.metro-facebook-logo:before {
+  content: "\3c";
+}
+.metro-fast-shipment:before {
+  content: "\3d";
+}
+.metro-filter:before {
+  content: "\3e";
+}
+.metro-fresh:before {
+  content: "\3f";
+}
+.metro-fresh-2:before {
+  content: "\40";
+}
+.metro-google-plus-symbol:before {
+  content: "\5b";
+}
+.metro-hidden:before {
+  content: "\5d";
+}
+.metro-hide:before {
+  content: "\5e";
+}
+.metro-history:before {
+  content: "\5f";
+}
+.metro-house:before {
+  content: "\60";
+}
+.metro-image:before {
+  content: "\7b";
+}
+.metro-info:before {
+  content: "\7c";
+}
+.metro-info-small:before {
+  content: "\7d";
+}
+.metro-invoices:before {
+  content: "\7e";
+}
+.metro-katalog:before {
+  content: "\5c";
+}
+.metro-katalog-list:before {
+  content: "\e000";
+}
+.metro-like:before {
+  content: "\e001";
+}
+.metro-link:before {
+  content: "\e002";
+}
+.metro-list:before {
+  content: "\e003";
+}
+.metro-lists:before {
+  content: "\e004";
+}
+.metro-location:before {
+  content: "\e005";
+}
+.metro-logout:before {
+  content: "\e006";
+}
+.metro-loyalty:before {
+  content: "\e007";
+}
+.metro-mail:before {
+  content: "\e008";
+}
+.metro-menu:before {
+  content: "\e009";
+}
+.metro-menu-2:before {
+  content: "\e00a";
+}
+.metro-menu-search:before {
+  content: "\e00b";
+}
+.metro-metro:before {
+  content: "\e00c";
+}
+.metro-minus:before {
+  content: "\e00d";
+}
+.metro-new-message:before {
+  content: "\e00e";
+}
+.metro-orders:before {
+  content: "\e00f";
+}
+.metro-phone:before {
+  content: "\e010";
+}
+.metro-plus:before {
+  content: "\e011";
+}
+.metro-print-document:before {
+  content: "\e012";
+}
+.metro-profile:before {
+  content: "\e013";
+}
+.metro-promotion:before {
+  content: "\e014";
+}
+.metro-rating:before {
+  content: "\e015";
+}
+.metro-rating-line:before {
+  content: "\e016";
+}
+.metro-rating-small:before {
+  content: "\e017";
+}
+.metro-rejected-small:before {
+  content: "\e018";
+}
+.metro-returns:before {
+  content: "\e019";
+}
+.metro-rotate-device:before {
+  content: "\e01a";
+}
+.metro-search:before {
+  content: "\e01b";
+}
+.metro-secure-shopping:before {
+  content: "\e01c";
+}
+.metro-select:before {
+  content: "\e01d";
+}
+.metro-share:before {
+  content: "\e01e";
+}
+.metro-shopping-cart:before {
+  content: "\e01f";
+}
+.metro-support:before {
+  content: "\e020";
+}
+.metro-swap-business:before {
+  content: "\e021";
+}
+.metro-sync:before {
+  content: "\e022";
+}
+.metro-time-slot:before {
+  content: "\e023";
+}
+.metro-trash:before {
+  content: "\e024";
+}
+.metro-user-filled:before {
+  content: "\e025";
+}
+.metro-user-perm:before {
+  content: "\e026";
+}
+.metro-visible:before {
+  content: "\e027";
+}
+.metro-web-1:before {
+  content: "\e028";
+}
+.metro-archive:before {
+  content: "\66";
+}
+.metro-horeca:before {
+  content: "\e029";
+}
+.metro-horeca-filled:before {
+  content: "\e02a";
+}
+.metro-info-large:before {
+  content: "\e02b";
+}
+.metro-warning-large:before {
+  content: "\e02c";
+}
+.metro-cip:before {
+  content: "\e02d";
+}
+.metro-time-offer:before {
+  content: "\e02e";
+}
+.metro-search-noresult:before {
+  content: "\e02f";
+}
+.metro-flash:before {
+  content: "\e030";
+}
+.metro-cloud-sync:before {
+  content: "\e031";
+}
+.metro-cloud-sync-error:before {
+  content: "\e032";
+}
+.metro-icr:before {
+  content: "\e033";
+}
+.metro-reconnect:before {
+  content: "\e034";
+}
+.metro-check:before {
+  content: "\58";
+}
+.metro-box:before {
+  content: "\e035";
+}
+.metro-package:before {
+  content: "\e036";
+}
+.metro-pallete:before {
+  content: "\e037";
+}
