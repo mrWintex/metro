@@ -1,15 +1,27 @@
 @import url("fonts/Lato/lato-family.min.css");
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --navigation-top-wrapper-width: 1170px;
+  --navigation-top-user-width: 132px;
+  --navigation-top-main-width: 1026px;
+  --content-padding: 0 200px 0 12px;
+  --content-width: 958px;
+}
+
 body {
   background: #f2f7ff;
   font-family: "Lato", sans-serif;
   font-weight: 400px;
   margin: 0;
-}
-
-button {
-  background: transparent;
-  border: none;
-  padding: 0;
 }
 
 .navigation .navigation-top {
@@ -20,52 +32,17 @@ button {
 .navigation .navigation-top .navigation-item {
   color: #FFFFFF;
   height: 45px;
-  text-decoration: none;
   line-height: 15px;
   padding: 0;
 }
 
-.navigation .navigation-top .navigation-icon {
-  margin-right: 10px;
-}
-
 .navigation .navigation-top .navigation-wrapper {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 1px;
-  width: 1170px;
+  width: var(--navigation-top-wrapper-width);
   padding-left: 12px;
 }
 
-.navigation .navigation-top .navigation-wrapper .navigation-user {
-  height: 45px;
-  width: 132px;
-}
-
-.navigation .navigation-top .navigation-wrapper .navigation-user::before {
-  content: '';
-  height: 32px;
-  border-left: 1px solid #6681AA;
-  margin: auto 0;
-}
-
-.navigation .navigation-top .navigation-wrapper .navigation-user .metro-loyalty {
-  font-size: 25px;
-  margin-left: 14px;
-}
-
-.navigation .navigation-top .navigation-wrapper .navigation-user .metro-list {
-  margin-left: 15px;
-  font-size: 25px;
-}
-
-.navigation .navigation-top .navigation-wrapper .navigation-user .metro-profile {
-  margin-left: 15px;
-  font-size: 28px;
-}
-
 .navigation .navigation-top .navigation-wrapper .navigation-main {
-  width: 1026px;
+  width: var(--navigation-top-main-width);
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-location-button {
@@ -74,6 +51,8 @@ button {
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-location-button .metro-location {
   font-size: 28px;
+  margin: 0 10px 0 0;
+  font-family: "metro-ua";
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-location-button .text-top {
@@ -85,16 +64,18 @@ button {
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-location-button::after {
-  content: "\22";
-  font-family: "metro-ua";
   font-size: 10px;
-  margin-left: 10px;
+  margin: 0 0 0 10px;
+  font-family: "metro-ua";
+  content: "\22";
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-livechat-button .metro-support {
   font-size: 21px;
+  margin: 0 10px 0 0;
+  font-family: "metro-ua";
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-livechat-button .text {
@@ -103,7 +84,8 @@ button {
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-registration-button .metro-icr {
   font-size: 21px;
-  margin-right: 13px;
+  margin: 0 13px 0 0;
+  font-family: "metro-ua";
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-registration-button .text {
@@ -116,6 +98,8 @@ button {
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-callcenter .metro-phone {
   font-size: 19px;
+  margin: 0 10px 0 0;
+  font-family: "metro-ua";
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-callcenter .text {
@@ -129,17 +113,47 @@ button {
   padding: 0 25px 0 15px;
 }
 
+.navigation .navigation-top .navigation-wrapper .navigation-main .navigation-language-selector .text {
+  font-size: 13px;
+}
+
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-language-selector::before {
   content: "\22";
-  font-family: "metro-ua";
   font-size: 13px;
-  margin-right: 7px;
+  margin: 0 7px 0 0;
+  font-family: "metro-ua";
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.navigation .navigation-top .navigation-wrapper .navigation-main .navigation-language-selector .text {
-  font-size: 13px;
+.navigation .navigation-top .navigation-wrapper .navigation-user {
+  height: 45px;
+  width: var(--navigation-top-user-width);
+}
+
+.navigation .navigation-top .navigation-wrapper .navigation-user::before {
+  content: '';
+  height: 32px;
+  border-left: 1px solid #6681AA;
+  margin: auto 0;
+}
+
+.navigation .navigation-top .navigation-wrapper .navigation-user .metro-loyalty {
+  font-size: 25px;
+  margin: 0 0 0 14px;
+  font-family: "metro-ua";
+}
+
+.navigation .navigation-top .navigation-wrapper .navigation-user .metro-list {
+  font-size: 25px;
+  margin: 0 0 0 15px;
+  font-family: "metro-ua";
+}
+
+.navigation .navigation-top .navigation-wrapper .navigation-user .metro-profile {
+  font-size: 28px;
+  margin: 0 0 0 15px;
+  font-family: "metro-ua";
 }
 
 .navigation .navigation-bottom {
@@ -153,54 +167,58 @@ button {
   border-bottom: 1px solid #E6E7EA;
 }
 
-.content-container .small-nav {
-  height: 50px;
-  width: 958px;
+.content-container .content-wrapper .content {
+  padding: var(--content-padding);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
-.content-container .small-nav .breadcrumb {
+.content-container .content-wrapper .content .small-nav {
+  height: 50px;
+}
+
+.content-container .content-wrapper .content .small-nav .breadcrumb {
   height: 55px;
   margin: 0;
   padding: 0;
 }
 
-.content-container .small-nav .breadcrumb .breadcrumb-item {
+.content-container .content-wrapper .content .small-nav .breadcrumb .breadcrumb-item {
   padding: 0;
 }
 
-.content-container .small-nav .breadcrumb .breadcrumb-item a {
+.content-container .content-wrapper .content .small-nav .breadcrumb .breadcrumb-item a {
   font-size: 13px;
-  text-decoration: none;
   color: #2277ff;
 }
 
-.content-container .small-nav .breadcrumb .breadcrumb-item a:hover {
+.content-container .content-wrapper .content .small-nav .breadcrumb .breadcrumb-item a:hover {
   text-decoration: underline;
 }
 
-.content-container .small-nav .breadcrumb .breadcrumb-item::before {
+.content-container .content-wrapper .content .small-nav .breadcrumb .breadcrumb-item::before {
   content: none;
 }
 
-.content-container .small-nav .breadcrumb .breadcrumb-item:not(:last-child)::after {
+.content-container .content-wrapper .content .small-nav .breadcrumb .breadcrumb-item:not(:last-child)::after {
   content: "\38";
   font-family: "metro-ua";
   padding-inline: 3px;
 }
 
-.content-container .content-wrapper .content {
-  padding: 0 200px 0 12px;
+.content-container .content-wrapper .content .content-item {
+  width: var(--content-width);
 }
 
 .content-container .content-wrapper .content .product {
-  width: 958px;
   background: #FFFFFF;
+  padding: 20px 12px 35px;
+  margin-bottom: 20px;
 }
 
 .content-container .content-wrapper .content .product-detail {
   height: 435px;
   margin-bottom: 20px;
-  padding: 20px 12px 35px;
 }
 
 .content-container .content-wrapper .content .product-detail .product-photo-container {
@@ -225,7 +243,6 @@ button {
 
 .content-container .content-wrapper .content .product-detail .product-photo-container .product-photo .photo-container {
   padding-right: 40px;
-  overflow: hidden;
 }
 
 .content-container .content-wrapper .content .product-detail .product-info {
@@ -331,13 +348,8 @@ button {
   font-size: 14px;
 }
 
-.content-container .content-wrapper .content .product-description {
-  padding: 20px 12px 35px;
-  margin-bottom: 100px;
-}
-
 .content-container .content-wrapper .content .product-description .product-description-header {
-  height: 50px;
+  height: 49px;
   margin-bottom: 30px;
   border-bottom: 4px solid #022E73;
   -webkit-box-sizing: border-box;
@@ -365,9 +377,7 @@ button {
 }
 
 .content-container .content-wrapper .content .product-description .product-informations {
-  padding: 0;
-  padding-right: 10px;
-  padding-left: 80px;
+  padding: 0 10px 0 80px;
 }
 
 .content-container .content-wrapper .content .product-description .product-informations .information {
@@ -403,42 +413,21 @@ button {
   margin: 25px 0 30px;
 }
 
-@media (max-width: 1470px) {
+@media (max-width: 1469px) {
+  :root {
+    --navigation-top-main-width: 830px;
+    --navigation-top-user-width: 275px;
+    --content-width: 863px;
+    --content-padding: 0 295px 0 12px;
+  }
   .navigation .navigation-top .navigation-wrapper {
     padding-right: 12px;
-  }
-  .navigation .navigation-top .navigation-wrapper .navigation-user {
-    width: 275px;
-  }
-  .navigation .navigation-top .navigation-wrapper .navigation-main {
-    width: 871px;
-  }
-  .content-container .small-nav {
-    width: 100%;
-  }
-  .content-container .content-wrapper .content {
-    padding: 0 295px 0 12px;
-  }
-  .content-container .content-wrapper .content .product {
-    width: 863px;
-  }
-  .content-container .content-wrapper .content .product-description .product-informations {
-    padding-left: 40px;
   }
 }
 
 @media (max-width: 1200px) {
   .navigation {
     display: none;
-  }
-  .navigation .navigation-top .navigation-wrapper {
-    padding-right: 12px;
-  }
-  .navigation .navigation-top .navigation-wrapper .navigation-user {
-    width: 275px;
-  }
-  .navigation .navigation-top .navigation-wrapper .navigation-main {
-    width: 871px;
   }
   .content-container .content-wrapper .content {
     padding: 0;

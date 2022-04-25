@@ -1,5 +1,17 @@
 @import "partials/variables";
+@import "partials/mixins";
 @import url("fonts/Lato/lato-family.min.css");
+
+@include ButtonReset;
+@include LinkReset;
+
+:root{
+    --navigation-top-wrapper-width: #{$navigation-top-width-xxl};
+    --navigation-top-user-width: #{$navigation-top-user-width-xxl};
+    --navigation-top-main-width: #{$navigation-top-main-width-xxl};
+    --content-padding: #{$content-padding-xxl};
+    --content-width: #{$content-width-xxl};
+}
 
 body{
     background: $background-color;
@@ -7,170 +19,135 @@ body{
     font-weight: 400px;
     margin: 0;
 }
-button{
-    background: transparent;
-    border: none;
-    padding: 0;
-}
+
+//=== NAVIGATION ===
 .navigation{
+    //=== NAVIGATION TOP ===
     .navigation-top{
         background: $nav-top-color;
         height: $navigation-top-height;
         .navigation-item{
             color: $nav-link-primary-color;
             height: $navigation-top-height;
-            text-decoration: none;
             line-height: 15px;
             padding: 0;
         }
-        .navigation-icon{
-            margin-right: 10px;
-        }
         .navigation-wrapper{
-            box-sizing: border-box;
-            padding-left: 1px;
-            width: 1170px;
+            width: var(--navigation-top-wrapper-width);
             padding-left: 12px; 
+            .navigation-main{
+                width: var(--navigation-top-main-width);
+                .navigation-location-button{
+                    font-weight: 900;
+                    .metro-location{ @include iconPreset(28px, 0 10px 0 0); }
+                    .text-top{ font-size: 10px; }
+                    .text-bottom{ font-size: 13px; }
+                    &::after{
+                        @include iconPreset(10px, 0 0 0 10px);
+                        content: "\22";
+                        transform: rotate(90deg);
+                    }
+                }
+                
+                .navigation-livechat-button{
+                    .metro-support{ @include iconPreset(21px, 0 10px 0 0); }
+                    .text{ font-size: 13px; }
+                }
+                .navigation-registration-button{
+                    .metro-icr{ @include iconPreset(21px, 0 13px 0 0); }
+                    .text{ font-size: 13px; }
+                }
+                .navigation-callcenter{
+                    color: #cce0ff;
+                    .metro-phone{ @include iconPreset(19px, 0 10px 0 0); }
+                    .text{ font-size: 11px; }
+                }
+                .navigation-language-selector{
+                    width: $navigation-language-selector-width;
+                    box-sizing: content-box;
+                    padding: 0 25px 0 15px;
+                    .text{ font-size: 13px; }
+                    &::before{
+                        content: "\22";
+                        @include iconPreset(13px, 0 7px 0 0);
+                        transform: rotate(90deg);
+                    }
+                }
+            }
             .navigation-user{
                 height: $navigation-top-height;
-                width: 132px;
+                width: var(--navigation-top-user-width);
                 &::before{
                     content: '';
                     height: 32px;
                     border-left: 1px solid #6681AA;
                     margin: auto 0;
                 }
-                .metro-loyalty{
-                    font-size: 25px;
-                    margin-left: 14px;
-                }
-                .metro-list{
-                    margin-left: 15px;
-                    font-size: 25px;
-                }
-                .metro-profile{
-                    margin-left: 15px;
-                    font-size: 28px;
-                }
-            }
-            .navigation-main{
-                width: 1026px;
-                    .navigation-location-button{
-                        font-weight: 900;
-                        .metro-location{
-                            font-size: 28px;
-                        }
-                        .text-top{
-                            font-size: 10px;
-                        }
-                        .text-bottom{
-                            font-size: 13px;
-                        }
-                        &::after{
-                            content: "\22";
-                            font-family: "metro-ua";
-                            font-size: 10px;
-                            margin-left: 10px;
-                            transform: rotate(90deg);
-                        }
-                    }
-    
-                    .navigation-livechat-button{
-                        .metro-support{
-                            font-size: 21px;
-                        }
-                        .text{
-                            font-size: 13px;
-                        }
-                    }
-                    .navigation-registration-button{
-                        .metro-icr{
-                            font-size: 21px;
-                            margin-right: 13px;
-                        }
-                        .text{
-                            font-size: 13px;
-                        }
-                    }
-                    .navigation-callcenter{
-                        color: #cce0ff;
-                        .metro-phone{
-                            font-size: 19px;
-                        }
-                        .text{
-                            font-size: 11px;
-                        }
-                    }
-                    .navigation-language-selector{
-                        width: 79px;
-                        box-sizing: content-box;
-                        padding: 0 25px 0 15px;
-                        &::before{
-                            content: "\22";
-                            font-family: "metro-ua";
-                            font-size: 13px;
-                            margin-right: 7px;
-                            transform: rotate(90deg);
-                        }
-                        .text{
-                        font-size: 13px;
-                    }
-                }
+                .metro-loyalty{ @include iconPreset(25px, 0 0 0 14px);}
+                .metro-list{ @include iconPreset(25px, 0 0 0 15px); }
+                .metro-profile{ @include iconPreset(28px, 0 0 0 15px); }
             }
         }
     }
+    //=== NAVIGATION BOTTOM ===
     .navigation-bottom{
         background: $nav-bottom-color;
         height: $navigation-bottom-height;
     }
 }
 
+//=== MENU ===
 .menu{
     background: $elements-color;
     height: $menu-height;
     border-bottom: 1px solid $menu-border-color;
 }
 
+//=== PAGE CONTENT ===
 .content-container{
-    .small-nav{
-        height: 50px;
-        width: 958px;
-        .breadcrumb{
-            height: $menu-height;
-            margin: 0;
-            padding: 0;
-            .breadcrumb-item{
-                padding: 0;
-                a{
-                    font-size: 13px;
-                    text-decoration: none;
-                    color: #2277ff;
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-                &::before{
-                    content: none;
-                }
-                &:not(:last-child)::after{
-                    content: "\38";
-                    font-family: "metro-ua";
-                    padding-inline: 3px;
-                }
-            }
-        }
-    }
     .content-wrapper{
         .content{
-            padding: 0 200px 0 12px;
-            .product{
-                width: 958px;
-                background: $elements-color;
+            padding: var(--content-padding);
+            box-sizing: content-box;
+            //=== SMALL NAVIGATION ===
+            .small-nav{
+                height: $small-nav-height;
+                .breadcrumb{
+                    height: $menu-height;
+                    margin: 0;
+                    padding: 0;
+                    .breadcrumb-item{
+                        padding: 0;
+                        a{
+                            font-size: 13px;
+                            color: #2277ff;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        &::before{
+                            content: none;
+                        }
+                        &:not(:last-child)::after{
+                            content: "\38";
+                            font-family: "metro-ua";
+                            padding-inline: 3px;
+                        }
+                    }
+                }
             }
-            .product-detail{
-                height: 435px;
+            .content-item{
+                width: var(--content-width);
+            }
+            .product{
+                background: $elements-color;
+                padding: $section-padding;
                 margin-bottom: $section-margin-bottom;
-                padding: 20px 12px 35px;
+            }
+            // === PRODUCT DETAIL ===
+            .product-detail{
+                height: $product-detail-height;
+                margin-bottom: $section-margin-bottom;
                 .product-photo-container{
                     padding: 0;
                     height: 100%;
@@ -189,7 +166,6 @@ button{
                     .product-photo{
                         .photo-container{
                             padding-right: 40px;
-                            overflow: hidden;
                         }
                     }
                 }
@@ -281,11 +257,10 @@ button{
                     }
                 }
             }
+            //=== PRODUCT DESCRIPTION ===
             .product-description{
-                padding: 20px 12px 35px;
-                margin-bottom: 100px;
                 .product-description-header{
-                    height: 50px;
+                    height: 49px;
                     margin-bottom: 30px;
                     border-bottom: 4px solid #022E73;
                     box-sizing: border-box;
@@ -307,9 +282,7 @@ button{
                     }
                 }
                 .product-informations{
-                    padding: 0;
-                    padding-right: 10px;
-                    padding-left: 80px;
+                    padding: 0 10px 0 80px; 
                     .information{
                         padding: 0;
                         padding-top: 5px;
@@ -342,35 +315,19 @@ button{
         }
     }
 }
-@media (max-width: 1470px) {
+
+//=== PAGE BREAKPOINTS
+@media (max-width: 1469px) {
+    :root{
+        --navigation-top-main-width: #{$navigation-top-main-width-xl};
+        --navigation-top-user-width: #{$navigation-top-user-width-xl};
+        --content-width: #{$content-width-xl};
+        --content-padding: #{$content-padding-xl};
+    }
     .navigation{
         .navigation-top{
             .navigation-wrapper{
                 padding-right: 12px;
-                .navigation-user{
-                    width: 275px;
-                }
-                .navigation-main{
-                    width: 871px;
-                }
-            }
-        }
-    }
-    .content-container{
-        .small-nav{
-            width: 100%;
-        }
-        .content-wrapper{
-            .content{
-                padding: 0 295px 0 12px;
-                .product{
-                    width: 863px;
-                }
-                .product-description{
-                    .product-informations{
-                        padding-left: 40px;
-                    }
-                }
             }
         }
     }
@@ -378,17 +335,6 @@ button{
 @media (max-width: 1200px) {
     .navigation{
         display: none;
-        .navigation-top{
-            .navigation-wrapper{
-                padding-right: 12px;
-                .navigation-user{
-                    width: 275px;
-                }
-                .navigation-main{
-                    width: 871px;
-                }
-            }
-        }
     }
     .content-container{
         .content-wrapper{
