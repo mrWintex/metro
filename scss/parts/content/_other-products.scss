@@ -1,0 +1,34 @@
+.other-products-container{
+    margin-bottom: 20px;
+    .other-products-wrapper{
+        height: 375px;
+        .other-products-header{
+            .header{
+                background: white;
+                color:#022E73;
+                font-weight: 800;
+                padding: 0 15px;
+                height: 36px;
+            }
+            a{
+                cursor: pointer;
+                color: #2277ff;
+                font-size: 13px;
+                &::after{
+                    content: "\38";
+                    font-family: "metro-ua";
+                    padding-inline: 0px;
+                    font-size: 24px;
+                }
+                &:hover{
+                    color: #1759c4;
+                }
+            }
+        }
+        .other-products-content{
+            padding: 0 20px;
+            background: white;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@mixin iconPreset($font-size, $margin){
+    font-size: $font-size;
+    margin: $margin;
+    font-family: "metro-ua";
+}   

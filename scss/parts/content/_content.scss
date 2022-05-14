@@ -1,0 +1,26 @@
+.content-container{
+    .content-wrapper{
+        .content{
+            padding: var(--content-padding);
+            box-sizing: content-box;
+            //=== SMALL NAVIGATION ===
+            @import "small-nav";
+
+            .content-item{
+                width: var(--content-width);
+                background: $elements-color;
+                margin-bottom: $section-margin-bottom;
+            }
+            .product{
+                padding: $section-padding;
+            }
+
+            // === PRODUCT DETAIL ===
+            @import "product-detail";
+            //=== PRODUCT DESCRIPTION ===
+            @import "product-description";
+        }
+        //=== OTHER PRODUCTS RECOMENDATION ===
+        @import "other-products";
+    }
+}

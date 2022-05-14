@@ -1,6 +1,6 @@
-$(function(){
-    $(".photo-option").on("click", function() {
-        $(".photo-wrapper").removeClass("d-flex").addClass("d-none");
-        $("#product-photo-"+$(this).attr("data-photo-id")).removeClass("d-none").addClass("d-flex");
+$(function () {
+    $(".photo-option").on("click", function () {
+        $(".photo-wrapper").fadeOut(); $("#product-photo-" + $(this).attr("data-photo-id")).fadeIn();
+        console.log("#product-photo-" + $(this).attr("data-photo-id"));
     });
 });

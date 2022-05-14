@@ -1,0 +1,24 @@
+:root{
+    --navigation-top-wrapper-width: #{$navigation-top-width-xxl};
+    --navigation-top-user-width: #{$navigation-top-user-width-xxl};
+    --navigation-top-main-width: #{$navigation-top-main-width-xxl};
+    --content-padding: #{$content-padding-xxl};
+    --content-width: #{$content-width-xxl};
+}
+
+body{
+    background: $background-color;
+    font-family: "Lato", sans-serif;
+    font-weight: 400px;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,66 @@
+.navigation-top{
+    background: $nav-top-color;
+    height: $navigation-top-height;
+    .navigation-item{
+        color: $nav-link-primary-color;
+        height: $navigation-top-height;
+        line-height: 15px;
+        padding: 0;
+    }
+    .navigation-wrapper{
+        width: var(--navigation-top-wrapper-width);
+        padding-left: 12px; 
+        .navigation-main{
+            width: var(--navigation-top-main-width);
+            .navigation-location-button{
+                font-weight: 900;
+                .metro-location{ @include iconPreset(28px, 0 10px 0 0); }
+                .text-top{ font-size: 10px; }
+                .text-bottom{ font-size: 13px; }
+                &::after{
+                    @include iconPreset(10px, 0 0 0 10px);
+                    content: "\22";
+                    transform: rotate(90deg);
+                }
+            }
+            
+            .navigation-livechat-button{
+                .metro-support{ @include iconPreset(21px, 0 10px 0 0); }
+                .text{ font-size: 13px; }
+            }
+            .navigation-registration-button{
+                .metro-icr{ @include iconPreset(21px, 0 13px 0 0); }
+                .text{ font-size: 13px; }
+            }
+            .navigation-callcenter{
+                color: #cce0ff;
+                .metro-phone{ @include iconPreset(19px, 0 10px 0 0); }
+                .text{ font-size: 11px; }
+            }
+            .navigation-language-selector{
+                width: $navigation-language-selector-width;
+                box-sizing: content-box;
+                padding: 0 25px 0 15px;
+                .text{ font-size: 13px; }
+                &::before{
+                    content: "\22";
+                    @include iconPreset(13px, 0 7px 0 0);
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        .navigation-user{
+            height: $navigation-top-height;
+            width: var(--navigation-top-user-width);
+            &::before{
+                content: '';
+                height: 32px;
+                border-left: 1px solid #6681AA;
+                margin: auto 0;
+            }
+            .metro-loyalty{ @include iconPreset(25px, 0 0 0 14px);}
+            .metro-list{ @include iconPreset(25px, 0 0 0 15px); }
+            .metro-profile{ @include iconPreset(28px, 0 0 0 15px); }
+        }
+    }
+}
