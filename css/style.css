@@ -431,10 +431,6 @@ a {
   margin-bottom: 20px;
 }
 
-.content-container .content-wrapper .other-products-container .other-products-wrapper {
-  height: 375px;
-}
-
 .content-container .content-wrapper .other-products-container .other-products-wrapper .other-products-header .header {
   background: white;
   color: #022E73;
@@ -464,6 +460,7 @@ a {
   padding: 0 20px;
   background: white;
   margin: 0;
+  height: 324px;
 }
 
 footer .footer-top {
@@ -508,6 +505,10 @@ footer .footer-bottom {
     max-width: 1146px;
   }
   .content-container .content-wrapper .content .product .product-info-header h3 {
+    width: unset;
+  }
+}
+/*# sourceMappingURL=style.css.map */uct .product-info-header h3 {
     width: unset;
   }
 }
