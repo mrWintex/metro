@@ -13,34 +13,35 @@
   <body>
     <!-- NAVIGATION -->
     <header class="navigation">
-      <div class="navigation-top d-flex justify-content-center">
-        <div class="navigation-wrapper d-flex justify-content-xxl-center justify-content-xl-between">
+     <!-- NAVIGATION TOP --> 
+     <div class="navigation-top d-flex justify-content-center">
+       <div class="navigation-wrapper d-flex justify-content-xxl-center justify-content-xl-between">
 
           <div class="navigation-main d-flex justify-content-between">
             <button class="navigation-location-button navigation-item d-flex align-items-center">
               <i class="metro-location"></i>
               <div class="d-flex flex-column align-items-start justify-content-start">
-                  <span class="text-top">Selected store</span>
+                <span class="text-top">Selected store</span>
                   <span class="text-bottom"><strong>Kyiv, Pochaina. Store #16</strong></span>
-              </div>
-            </button>
-            <button class="navigation-livechat-button navigation-item d-flex align-items-center justify-content-center">
-              <i class="metro-support"></i>
-              <span class="text">Live chat</span>
-            </button>
-            <button class="navigation-registration-button navigation-item d-flex align-items-center justify-content-center">
-              <i class="metro-icr"></i>
-              <span class="text">Registration</span>
-            </button>
-            <div class="navigation-callcenter navigation-item d-flex align-items-center justify-content-center">
-              <i class="metro-phone"></i>
-              <span class="text">Call center 0-800-501-401</span>
+                </div>
+              </button>
+              <button class="navigation-livechat-button navigation-item d-flex align-items-center justify-content-center">
+                <i class="metro-support"></i>
+                <span class="text">Live chat</span>
+              </button>
+              <button class="navigation-registration-button navigation-item d-flex align-items-center justify-content-center">
+                <i class="metro-icr"></i>
+                <span class="text">Registration</span>
+              </button>
+              <div class="navigation-callcenter navigation-item d-flex align-items-center justify-content-center">
+                <i class="metro-phone"></i>
+                <span class="text">Call center 0-800-501-401</span>
             </div>
             <div class="navigation-language-selector navigation-item d-flex align-items-center justify-content-start">
               <span class="text">English</span>
             </div>
           </div>
-
+          
           <div class="navigation-user d-flex">
             <a href="#" class="navigation-item d-flex justify-content-center align-items-center">
               <i class="metro-loyalty"></i>
@@ -56,12 +57,104 @@
         </div>
       </div>
 
-      <div class="navigation-bottom">
+      <!-- NAVIGATION BOTTOM --> 
+      <div class="navigation-bottom d-flex justify-content-center align-items-center">
+        <div class="navigation-bottom-wrapper h-100 d-flex justify-content-between align-items-center">
+          <div class="links d-flex align-items-center">
+            <a href="#" class="logo-link"><img src="./metro-ui/img/metro-logo.svg" alt="metro-logo" class="logo-image"></a>
+            <ul class="links-list list-inline d-flex">
+              <li class="list-inline-item d-flex"><a href="#">DELIVERY</a></li>
+              <li class="list-inline-item d-flex"><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+          <div class="search-input-container">
+            <input type="text" name="metro-search" id="metro-search" class="search-input" placeholder="Search">
+            <div class="search-right d-flex justify-content-center align-items-center">
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">in catalogue</option>
+                <option value="2">in category</option>
+              </select>
+              <button class="search-button d-flex justify-content-center align-items-center"><i class="metro-search"></i></button>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- MENU -->
-    <div class="menu"></div>
+    <div class="menu d-flex justify-content-center align-items-center">
+      <div class="menu-wrapper d-flex justify-content-start align-items-center">
+          <a href="#" class="menu-link d-flex justify-content-center align-items-center text-uppercase active"><i class="metro-menu"></i><span class="text">Product catalog</span></a>
+          <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-rating-line"></i><span class="text">METRO Brands</span></a>
+          <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-rating-line"></i><span class="text">All brands</span></a>
+          <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-horeca-filled"></i><span class="text">HoReCa Assortment</span></a>
+          <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-promotion"></i><span class="text">Promo</span></a>
+          <div class="menu-list">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 p-0">
+                  <div class="list-group" role="tablist">
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-meat-list" data-toggle="list" href="#list-meat" role="tab"><i class="metro-category-meat-fish-poultry"></i>Meat, Seafood and Poultry</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-dairy-and-eggs"></i>Dairy and Eggs</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-frozen"></i>Frozen</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-bakery"></i>Bakery</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-fruits-and-vegetables"></i>Fruits and Vagetables</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-grocery"></i>Grocery</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-canned-food-oil-vinegar"></i>Canned Goods, Oil, Vinegar</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-sauces-and-spices"></i>Sauces and Spices</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-alcohol"></i>Alcohol</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-drinks"></i>Drinks</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-snacks-and-sweets"></i>Snacks, Cookies and Chips</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-household-goods"></i>Household Essentials</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-household"></i>Household Supplies</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-kitchenware"></i>Kitchen and Tableware</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-home-interior-and-textiles"></i>Interior, Furniture and Textiles</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-office"></i>Office Supplies</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-personal-hygiene"></i>Personal Care</a>
+                    <a class="list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="list" href="#list-milk" role="tab"><i class="metro-category-hobby-and-rest"></i>Hobbies and Rest</a>
+                  </div>
+                </div>
+                <div class="col-4 p-0">
+                  <div class="tab-content list-group">
+                    <div class="tab-pane show active" id="list-meat" role="tabpanel" aria-labelledby="list-udalosti-list">
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Sausages</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Pork</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Beef</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Other Meat</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Meat Delicacies</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Fish and Seafood</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Fish Delicacies</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a>
+                    </div>
+                    <div class="tab-pane" id="list-milk" role="tabpanel" aria-labelledby="list-zpravy-list">
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Milk</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Cheese</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Cream</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Sour Cream</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Butter and Margarine</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Milk Drinks</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Yoghurts and Desserts</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Farmer Cheese</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Curds and Cottage Cheese</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Sweetened Condensed Milk</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Eggs</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Lactose-free Drinks and Food</a>
+                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Yeast</a>
+                    </div>
+                    <div class="tab-pane fade" id="list-clanky" role="tabpanel" aria-labelledby="list-clanky-list">Obsah záložky pro články</div>
+                </div>
+                </div>
+                <div class="col-4 p-0">
+                  <div class="list-group">
+                    
+                  </div>
+                </div>
+                </div>
+            </div>
+            </div>
+          </div>
+      </div>
 
     <!-- CONTENT -->
     <main class="content-container">

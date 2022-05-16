@@ -1,0 +1,49 @@
+.menu{
+    background: $elements-color;
+    height: $menu-height;
+    border-bottom: 1px solid $menu-border-color;
+    &-wrapper{
+        width: 1170px;
+        height: 100%;
+        padding: 0 12px;
+        position: relative;
+    
+        .menu-link{
+            font-size: 12px;
+            font-weight: 800;
+            color: $link-color;
+            margin-right: 25px;
+            i{
+                font-size: 22px;
+                line-height: 18px;
+                margin-right: 10px;
+                color: #99A1AD;
+            }
+            .text{
+                padding-bottom: 3px;
+            }
+
+            &:first-child{
+                color: #262d72;
+                position: relative;
+                height: 100%;
+                i{
+                    color: #262d72;
+                }
+                &::after{
+                    content: '';
+                    height: 6px;
+                    width: 0%;
+                    background: #002D72;
+
+                    position: absolute;
+                    bottom: 0;
+                }
+                &.active::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @import "menulist";
+}

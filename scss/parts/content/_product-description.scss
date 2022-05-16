@@ -36,7 +36,7 @@
                 color: #667284;
                 height: 47%;
                 &:last-child{
-                    border-top: 1px solid #DFE3E7;
+                    border-top: 2px solid #DEE2E6;
                 }
                 .category-content{
                     font-weight: 500;
@@ -56,5 +56,6 @@
     .product-description-underline{
         color: #c4c5c5;
         margin: 25px 0 30px;
+        font-size: .1rem;
     }
 }

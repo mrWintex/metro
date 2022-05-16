@@ -1,0 +1,55 @@
+.menu-list{
+    position: absolute;
+    left: 12px;
+    top: 100%;
+    border: 1px solid $menu-border-color;
+    background: $elements-color;
+    padding: 15px 0;
+    width: $content-width-xxl;
+    z-index: 10;
+    .list-group{
+        padding: 0;
+        .list-group-item{
+            border: none;
+            border-radius: 0;
+            padding: 0 10px;
+            height: 29px;
+            font-size: 13px;
+            position: relative;
+            color: $link-color;
+            transition: all 250ms;
+            &.border-left{
+                border-left: 1px solid $menu-border-color;
+            }
+            i{
+                font-size: 20px;
+                line-height: 2px;
+                margin-right: 13px;
+                color: #667284;
+                transition: all 250ms;
+            }
+            &::after{
+                position: absolute;
+                right: 15px;
+                @include iconPreset(10px, 0 0 0 10px);
+                content: "\22";
+                font-size: 12px;
+                color: #D4D3D7;
+                transition: all 250ms;
+            }
+            &.active{
+                background: #E6F0FF;
+                margin: 0;
+            }
+            &:hover{
+                background: #E6F0FF;
+                i{
+                    color: #0C69FE;
+                }
+                &::after{
+                    color: #0C69FE;
+                }
+            }
+        }
+    }
+}
