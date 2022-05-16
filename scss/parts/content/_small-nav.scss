@@ -9,7 +9,7 @@
             padding: 0;
             a{
                 font-size: 13px;
-                color: #2277ff;
+                color: $link-color;
                 &:hover{
                     text-decoration: underline;
                 }

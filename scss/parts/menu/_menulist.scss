@@ -7,6 +7,7 @@
     padding: 15px 0;
     width: $content-width-xxl;
     z-index: 10;
+    display: none;
     .list-group{
         padding: 0;
         .list-group-item{
@@ -35,13 +36,15 @@
                 content: "\22";
                 font-size: 12px;
                 color: #D4D3D7;
-                transition: all 250ms;
+                transition: color 250ms;
             }
             &.active{
-                background: #E6F0FF;
                 margin: 0;
+                &::after{
+                    transform: scale(1.2) rotate(90deg);
+                }
             }
-            &:hover{
+            &:hover, &.active{
                 background: #E6F0FF;
                 i{
                     color: #0C69FE;
