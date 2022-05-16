@@ -23,7 +23,6 @@
                     }
                     a{
                         color: $link-primary-color;
-                        padding-bottom: 4px;
                         font-size: 12px;
                     }
                 }
@@ -32,12 +31,14 @@
         .search-input-container{
             position: relative;
             .search-input{
-                font-weight: 500;
+                font-weight: 400;
+                font-family: "Lato", sans-serif;
                 padding: 0 12px;
-                height: 42px;
-                width: 332px;
-                border: 1px solid grey;
-                border-radius: 3px;
+                height: 40px;
+                width: 330px;
+                border: none;
+                box-shadow: 0 0 0 1px #ccd0d6;
+                border-radius: 2px;
                 &:focus{
                     outline: none;
                 }

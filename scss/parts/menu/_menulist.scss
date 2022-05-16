@@ -32,6 +32,7 @@
             &::after{
                 position: absolute;
                 right: 15px;
+                padding-bottom: 2px;
                 @include iconPreset(10px, 0 0 0 10px);
                 content: "\22";
                 font-size: 12px;
@@ -41,6 +42,8 @@
             &.active{
                 margin: 0;
                 &::after{
+                    right: 16px;
+                    padding-right: 2px;
                     transform: scale(1.2) rotate(90deg);
                 }
             }

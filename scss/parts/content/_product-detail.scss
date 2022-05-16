@@ -33,10 +33,12 @@
                 font-weight: 800;
                 color: #022E73;
                 margin: 0;
+                height: 58px;
+                line-height: 29px;
             }
             .product-user-buttons{
-                margin-top: 3px;
                 padding-left: 100px;
+                padding-top: 5px;
                 button{
                     &:first-child{
                         margin-right: 10px;
@@ -60,13 +62,14 @@
         .product-price-section{
             max-width: 360px;
             margin-top: 30px;
-            margin-bottom: 23px;
+            margin-bottom: 20px;
             a{
-                color: #2277ff;
+                color: $link-color;
                 text-decoration: none;
                 font-size: 13px;
                 i{
                     font-size: 20px;
+                    padding-top: 2px;
                     margin-right: 13px;
                     transform: translateY(-3px);
                 }
@@ -92,6 +95,8 @@
         .product-num-in-box{
             max-width: 360px;
             position: relative;
+            line-height: 20px;
+            padding: 5px 0;
             i{
                 margin-right: 8px;
             }
@@ -99,10 +104,11 @@
                 content: '';
                 width: 100%;
                 position: absolute;
-                bottom: -20%;
+                bottom: 0%;
                 border-bottom: 1px solid rgb(236, 222, 222);
             }
             .text{
+                line-height: 21px;
                 font-size: 13px;
                 color: #7f8388;
             }

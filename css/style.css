@@ -64,6 +64,7 @@ a {
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-location-button::after {
+  padding-top: 2.4px;
   font-size: 10px;
   margin: 0 0 0 10px;
   font-family: "metro-ua";
@@ -193,7 +194,6 @@ a {
 
 .navigation .navigation-bottom-wrapper .links .links-list li a {
   color: #FFFFFF;
-  padding-bottom: 4px;
   font-size: 12px;
 }
 
@@ -202,12 +202,15 @@ a {
 }
 
 .navigation .navigation-bottom-wrapper .search-input-container .search-input {
-  font-weight: 500;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
   padding: 0 12px;
-  height: 42px;
-  width: 332px;
-  border: 1px solid grey;
-  border-radius: 3px;
+  height: 40px;
+  width: 330px;
+  border: none;
+  -webkit-box-shadow: 0 0 0 1px #ccd0d6;
+          box-shadow: 0 0 0 1px #ccd0d6;
+  border-radius: 2px;
 }
 
 .navigation .navigation-bottom-wrapper .search-input-container .search-input:focus {
@@ -268,10 +271,8 @@ a {
   line-height: 18px;
   margin-right: 10px;
   color: #99A1AD;
-}
-
-.menu-wrapper .menu-link .text {
-  padding-bottom: 3px;
+  width: 22px;
+  height: 22px;
 }
 
 .menu-wrapper .menu-link:first-child {
@@ -341,6 +342,7 @@ a {
 .menu .menu-list .list-group .list-group-item::after {
   position: absolute;
   right: 15px;
+  padding-bottom: 2px;
   font-size: 10px;
   margin: 0 0 0 10px;
   font-family: "metro-ua";
@@ -356,6 +358,8 @@ a {
 }
 
 .menu .menu-list .list-group .list-group-item.active::after {
+  right: 16px;
+  padding-right: 2px;
   -webkit-transform: scale(1.2) rotate(90deg);
           transform: scale(1.2) rotate(90deg);
 }
@@ -466,11 +470,13 @@ a {
   font-weight: 800;
   color: #022E73;
   margin: 0;
+  height: 58px;
+  line-height: 29px;
 }
 
 .content-container .content-wrapper .content .product-detail .product-info .product-info-header .product-user-buttons {
-  margin-top: 3px;
   padding-left: 100px;
+  padding-top: 5px;
 }
 
 .content-container .content-wrapper .content .product-detail .product-info .product-info-header .product-user-buttons button:first-child {
@@ -496,17 +502,18 @@ a {
 .content-container .content-wrapper .content .product-detail .product-info .product-price-section {
   max-width: 360px;
   margin-top: 30px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .content-container .content-wrapper .content .product-detail .product-info .product-price-section a {
-  color: #2277ff;
+  color: #0869FE;
   text-decoration: none;
   font-size: 13px;
 }
 
 .content-container .content-wrapper .content .product-detail .product-info .product-price-section a i {
   font-size: 20px;
+  padding-top: 2px;
   margin-right: 13px;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -534,6 +541,8 @@ a {
 .content-container .content-wrapper .content .product-detail .product-info .product-num-in-box {
   max-width: 360px;
   position: relative;
+  line-height: 20px;
+  padding: 5px 0;
 }
 
 .content-container .content-wrapper .content .product-detail .product-info .product-num-in-box i {
@@ -544,11 +553,12 @@ a {
   content: '';
   width: 100%;
   position: absolute;
-  bottom: -20%;
+  bottom: 0%;
   border-bottom: 1px solid #ecdede;
 }
 
 .content-container .content-wrapper .content .product-detail .product-info .product-num-in-box .text {
+  line-height: 21px;
   font-size: 13px;
   color: #7f8388;
 }
@@ -559,13 +569,14 @@ a {
 
 .content-container .content-wrapper .content .product-description .product-description-header {
   height: 49px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   border-bottom: 4px solid #022E73;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .content-container .content-wrapper .content .product-description .product-description-header h4 {
+  padding-top: 5px;
   vertical-align: top;
   color: #022E73;
   font-size: 13px;
@@ -609,15 +620,16 @@ a {
 }
 
 .content-container .content-wrapper .content .product-description .product-description-wrapper .product-informations .information:last-child {
-  border-top: 2px solid #DEE2E6;
+  border-top: 1px solid #DEE2E6;
 }
 
 .content-container .content-wrapper .content .product-description .product-description-wrapper .product-informations .information .category-content {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .content-container .content-wrapper .content .product-description .product-description-wrapper .product-informations .information .brand-content {
-  font-weight: 500;
+  font-family: 'Lato';
+  font-weight: 400;
   color: #2277ff;
   text-decoration: none;
 }

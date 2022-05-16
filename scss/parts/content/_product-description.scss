@@ -1,10 +1,11 @@
 .product-description{
     .product-description-header{
         height: 49px;
-        margin-bottom: 30px;
+        margin-bottom: 31px;
         border-bottom: 4px solid #022E73;
         box-sizing: border-box;
         h4{
+            padding-top: 5px;
             vertical-align: top;
             color:#022E73;
             font-size: 13px;
@@ -36,13 +37,14 @@
                 color: #667284;
                 height: 47%;
                 &:last-child{
-                    border-top: 2px solid #DEE2E6;
+                    border-top: 1px solid #DEE2E6;
                 }
                 .category-content{
-                    font-weight: 500;
+                    font-weight: 400;
                 }
                 .brand-content{
-                    font-weight: 500;
+                    font-family: 'Lato';
+                    font-weight: 400;
                     color: #2277ff;
                     text-decoration: none;
                     &:hover{
