@@ -1,4 +1,29 @@
 .footer-top{
     background-color: #00245B;
     height: 84px;
+    &-wrapper{
+        box-sizing: content-box;
+        padding: 0 12px;
+        width: 1146px;
+        height: 100%;
+        .footer-logo{
+            width: 130px;
+            height: 26px;
+        }
+        .footer-net-list{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            .net-list-item{
+                margin-right: 0;
+                margin-left: 40px;
+                font-size: 16px;
+                a{
+                    line-height: 24px;
+                    color: $link-primary-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }

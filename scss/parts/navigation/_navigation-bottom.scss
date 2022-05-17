@@ -30,41 +30,46 @@
         }
         .search-input-container{
             position: relative;
-            .search-input{
-                font-weight: 400;
-                font-family: "Lato", sans-serif;
-                padding: 0 12px;
-                height: 40px;
-                width: 330px;
-                border: none;
-                box-shadow: 0 0 0 1px #ccd0d6;
-                border-radius: 2px;
-                &:focus{
-                    outline: none;
-                }
-            }
-            .search-right{
-                position: absolute;
-                top: 2px;
-                right: 6px;
-                height: 38px;
-                select{
-                    background-color: #F2F7FF;
-                    border-radius: 0;
+            height: 100%;
+            .search-input-wrapper{
+                position: relative;
+                .search-input{
+                    font-weight: 400;
+                    font-family: "Lato", sans-serif;
+                    padding: 0 12px;
+                    height: 40px;
+                    width: 330px;
                     border: none;
-                    height: 38px;
-                    width: 130px;
-                    font-size: 14px;
-                }
-                .search-button{
-                    width: 32px;
-                    height: 32px;
-                    background: $link-color;
+                    box-shadow: 0 0 0 1px #ccd0d6;
                     border-radius: 2px;
-                    i{
-                        color: white;
-                        font-size: 20px;
-                        line-height: 15px;
+                    &:focus{
+                        outline: none;
+                        //width: 900px;
+                    }
+                }
+                .search-right{
+                    position: absolute;
+                    top: 1px;
+                    right: 5px;
+                    height: 38px;
+                    select{
+                        background-color: #F2F7FF;
+                        border-radius: 0;
+                        border: none;
+                        height: 38px;
+                        width: 130px;
+                        font-size: 14px;
+                    }
+                    .search-button{
+                        width: 32px;
+                        height: 32px;
+                        background: $link-color;
+                        border-radius: 2px;
+                        i{
+                            color: white;
+                            font-size: 20px;
+                            line-height: 10px;
+                        }
                     }
                 }
             }

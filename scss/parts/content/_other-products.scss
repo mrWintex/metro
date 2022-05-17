@@ -1,7 +1,9 @@
 .other-products-container{
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 100vw;
     .other-products-wrapper{
-        
+        overflow: hidden;
         .other-products-header{
             .header{
                 background: white;
@@ -29,7 +31,40 @@
             padding: 0 20px;
             background: white;
             margin: 0;
-            height: 324px;
+            height: 323.5px;
+            .other-products-item{
+                margin: 0;
+                height: 100%;
+                padding: 25px 10px;
+                img{
+                    width: 152px;
+                    height: 104px;
+                    margin: 13px 6px;
+                }
+                .product-name{
+                    margin: 0 0 10px;
+                    text-align: center;
+                    line-height: 15px;
+                    a{
+                        font-size: 13px;
+                        color: #0F3877;
+                        font-weight: 800;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .product-price{
+                    font-weight: 800;
+                    font-size: 13px;
+                    color: black;
+                    .count{
+                        font-weight: 400;
+                        color: grey;
+                        margin-left: 2px;
+                    }
+                }
+            }
         }
     }
 }
