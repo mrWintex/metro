@@ -61,3 +61,24 @@
         font-size: .1rem;
     }
 }
+
+@include media-md{
+    .product-description{
+        .product-description-header{
+            height: 38px;
+        }
+        .product-description-wrapper{
+            padding: 0 10px;
+            flex-wrap: wrap;
+            .text-description{
+                p{
+                    padding-right: 0px;
+                }
+            }
+            .product-informations{
+                min-width: unset;
+                width: 100%;
+            }
+        }
+    }
+}

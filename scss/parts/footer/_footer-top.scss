@@ -46,6 +46,13 @@
             .footer-logo{
                 display: none;
             }
+            .footer-net-list{
+                width: 100%;
+                .net-list-item{
+                    margin: 0;
+                    font-size: 13px;
+                }
+            }
         }
     }
 }
