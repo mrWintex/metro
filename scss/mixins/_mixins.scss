@@ -1,3 +1,4 @@
+@import "mediaquerymixins";
 @mixin iconPreset($font-size, $margin){
     font-size: $font-size;
     margin: $margin;

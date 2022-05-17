@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="icon/styles.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>METRO Cash & Carry Online Store</title>
   </head>
@@ -15,7 +14,7 @@
     <!-- NAVIGATION -->
     <header class="navigation">
      <!-- NAVIGATION TOP --> 
-     <div class="navigation-top d-flex justify-content-center">
+     <div class="navigation-top d-xl-flex d-none justify-content-center">
        <div class="navigation-wrapper d-flex justify-content-xxl-center justify-content-xl-between">
          
           <div class="navigation-main d-flex justify-content-between">
@@ -59,7 +58,7 @@
       </div>
 
       <!-- NAVIGATION BOTTOM --> 
-      <div class="navigation-bottom d-flex justify-content-center align-items-center">
+      <div class="navigation-bottom d-xl-flex d-none justify-content-center align-items-center">
         <div class="navigation-bottom-wrapper h-100 d-flex justify-content-between align-items-center">
           <div class="links d-flex align-items-center">
             <a href="#" class="logo-link"><img src="./metro-ui/img/metro-logo.svg" alt="metro-logo" class="logo-image"></a>
@@ -85,7 +84,7 @@
     </header>
 
     <!-- MENU -->
-    <div class="menu d-flex justify-content-center align-items-center">
+    <div class="menu d-xl-flex d-none justify-content-center align-items-center">
       <div class="menu-wrapper d-flex justify-content-start align-items-center">
         <a href="#" class="menu-link d-flex justify-content-center align-items-center text-uppercase" id="menu-list-button"><i class="metro-menu"></i><span class="text">Product catalog</span></a>
         <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-rating-line"></i><span class="text">METRO Brands</span></a>
@@ -186,10 +185,10 @@
       
     <!-- CONTENT -->
     <main class="content-container">
-      <div class="content-wrapper d-flex justify-content-center align-items-center flex-column">
+      <div class="content-wrapper">
         <div class="content">
           <!-- SMALL NAVIGATION -->
-          <div class="small-nav d-flex justify-content-start align-items-center">
+          <div class="small-nav d-flex justify-content-start align-items-center content-width">
             <ol class="breadcrumb d-flex justify-content-start align-items-center">
               <li class="breadcrumb-item d-flex align-items-center justify-content-start"><a href="#">Home</a></li>
               <li class="breadcrumb-item d-flex align-items-center justify-content-start"><a href="#">Frozen</a></li>
@@ -197,7 +196,7 @@
             </ol>
           </div>
           <!-- PRODUCT DETAIL -->
-          <div class="product product-detail d-flex justify-content-start align-items-center content-item">
+          <div class="product product-detail d-flex justify-content-start align-items-center content-width content-background content-margin-btm">
             <div class="container-fluid h-100">
               <div class="row h-100">
                 <!-- PRODUCT DETAIL - PHOTO -->
@@ -255,7 +254,7 @@
             </div>
           </div>
           <!-- PRODUCT DESCRIPTION -->
-          <div class="product product-description content-item">
+          <div class="product product-description content-width content-background content-margin-btm   ">
             <div class="product-description-header d-flex justify-content-center align-items-center">
               <h4>Description</h4>
             </div>
@@ -270,46 +269,46 @@
             </div>
           <!-- RECOMMENDATION -->
           <div class="other-products-container">
-            <div class="other-products-wrapper d-flex flex-column">
+            <div class="other-products-wrapper">
               <div class="other-products-header d-flex justify-content-between">
                 <span class="header d-flex align-items-center">Recommendation</span>
-                  <span class="show-all-button"><a class="d-flex align-items-center">Show all</a></span>
+                <span class="show-all-button"><a class="d-flex align-items-center">Show all</a></span>
+              </div>
+              <div class="other-products-content recommendation-slick">
+                <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
+                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <span class="product-name"><a href="#">1. Metro Chef Milk 2,5% 1000g</a></span>
+                  <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
-                <div class="other-products-content content-item recommendation-slick">
-                  <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                    <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
-                    <span class="product-name"><a href="#">1. Metro Chef Milk 2,5% 1000g</a></span>
-                    <span class="product-price">34,90 грн<span class="count">x 1</span></span>
-                  </div>
-                  <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                    <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
-                    <span class="product-name"><a href="#">2. Metro Chef Milk 2,5% 1000g</a></span>
-                    <span class="product-price">34,90 грн<span class="count">x 1</span></span>
-                  </div>
-                  <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                    <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
-                    <span class="product-name"><a href="#">3. Metro Chef Milk 2,5% 1000g</a></span>
-                    <span class="product-price">34,90 грн<span class="count">x 1</span></span>
-                  </div>
-                  <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                    <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
-                    <span class="product-name"><a href="#">4. Metro Chef Milk 2,5% 1000g</a></span>
-                    <span class="product-price">34,90 грн<span class="count">x 1</span></span>
-                  </div>
-                  <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                    <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
-                    <span class="product-name"><a href="#">5. Metro Chef Milk 2,5% 1000g</a></span>
-                    <span class="product-price">34,90 грн<span class="count">x 1</span></span>
-                  </div>
+                <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
+                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <span class="product-name"><a href="#">2. Metro Chef Milk 2,5% 1000g</a></span>
+                  <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
+                <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
+                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <span class="product-name"><a href="#">3. Metro Chef Milk 2,5% 1000g</a></span>
+                  <span class="product-price">34,90 грн<span class="count">x 1</span></span>
+                </div>
+                <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
+                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <span class="product-name"><a href="#">4. Metro Chef Milk 2,5% 1000g</a></span>
+                  <span class="product-price">34,90 грн<span class="count">x 1</span></span>
+                </div>
+                <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
+                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <span class="product-name"><a href="#">5. Metro Chef Milk 2,5% 1000g</a></span>
+                  <span class="product-price">34,90 грн<span class="count">x 1</span></span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="other-products-container">
+          <div class="other-products-container test">
             <div class="other-products-wrapper d-flex flex-column">
               <div class="other-products-header d-flex justify-content-between">
                 <span class="header d-flex align-items-center">Similar Product</span>
               </div>
-              <div class="other-products-content content-item flex-grow-1 recommendation-slick">
+              <div class="other-products-content flex-grow-1 recommendation-slick">
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
                   <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
                   <span class="product-name"><a href="#">1. Metro Chef Milk 2,5% 1000g</a></span>
@@ -358,7 +357,7 @@
       <div class="footer-bottom d-flex justify-content-center">
         <div class="footer-bottom-wrapper d-flex justify-content-start align-items-start flex-column">
           <div class="columns-wrapper d-flex justify-content-start align-items-start">
-          <div class="column col">
+          <div class="column">
             <h3>Additional information</h3>
             <ul>
               <li><a href="#">Terms and Conditions</a></li>
@@ -366,7 +365,7 @@
               <li><a href="#">General Purchasing Conditions</a></li>
             </ul>
           </div>
-          <div class="column col">
+          <div class="column">
             <h3>Help</h3>
             <ul>
               <li><a href="#">FAQs</a></li>
@@ -374,7 +373,7 @@
               <li><a href="#">Payment and delivery</a></li>
             </ul>
           </div>
-          <div class="column col">
+          <div class="column">
             <h3>Dashboard</h3>
             <ul>
               <li><a href="#">Dashboard</a></li>
@@ -382,7 +381,7 @@
               <li><a href="#">Shopping lists</a></li>
             </ul>
           </div>
-          <div class="column col-2">
+          <div class="column">
             <h3>Contact</h3>
             <ul>
               <li class="d-flex justify-content-start align-items-center"><i class="metro-envelope"></i><a href="#">webshop@metro.ua</a></li>
@@ -392,7 +391,7 @@
           </div>   
         </div>
         <div class="footer-bottom-btm d-flex justify-content-between align-items-center">
-            <span class="text-uppercase">metro cash & carry Ukraine LLC.</span>
+            <span class="text-uppercase text">metro cash & carry Ukraine LLC.</span>
             <span class="language-selector">English</span>
           </div>
         </div>
@@ -408,7 +407,7 @@
            $(".recommendation-slick").slick({
              slidesToScroll: 5,
              slidesToShow: 5,
-             arrows: false,
+             arrows: true,
              responsive: [
                {
                  breakpoint: 1200,
@@ -419,11 +418,11 @@
                   }
                 },
                 {
-                  breakpoint: 800,
+                  breakpoint: 768,
                   settings: {
                     arrows: true,
-                    slidesToScroll: 3,
-                    slidesToShow: 3
+                    slidesToScroll: 2,
+                    slidesToShow: 2
                  }
                }
              ]

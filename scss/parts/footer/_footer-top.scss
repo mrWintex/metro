@@ -27,3 +27,25 @@
         }
     }
 }
+
+@include media-xl{
+    .footer-top{
+        &-wrapper{
+            .footer-net-list{
+                .net-list-item{
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include media-md{
+    .footer-top{
+        &-wrapper{
+            .footer-logo{
+                display: none;
+            }
+        }
+    }
+}

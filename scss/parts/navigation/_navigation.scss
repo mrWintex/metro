@@ -2,3 +2,13 @@
     @import "navigation-top";
     @import "navigation-bottom";
 }
+
+@include media-xxl{
+    .navigation{
+        .navigation-top{
+            .navigation-wrapper{
+                padding-right: 12px;
+            }
+        }
+    }
+}

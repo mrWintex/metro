@@ -22,3 +22,19 @@ button {
 a {
     text-decoration: none;
 }
+
+@include media-xxl{
+    :root{
+        --navigation-top-main-width: #{$navigation-top-main-width-xl};
+        --navigation-top-user-width: #{$navigation-top-user-width-xl};
+        --content-width: #{$content-width-xl};
+        --content-padding: #{$content-padding-xl};
+    }
+}
+
+@include media-xl{
+    :root{
+        --content-width: #{$content-width-lg};
+        --content-padding: #{$content-padding-xl};
+    }
+}

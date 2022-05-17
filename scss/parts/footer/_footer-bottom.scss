@@ -1,6 +1,6 @@
 .footer-bottom{
     background: white;
-    height: 246px;
+    height: auto;
     &-wrapper{
         width: 1170px;
         height: 100%;
@@ -9,6 +9,7 @@
             width: 100%;
             padding: 30px 0 10px;
             border-bottom: 1px solid #D3D7DD;
+            flex-wrap: wrap;
             .column{
                 height: 100%;
                 font-family: 'Lato', sans-serif;
@@ -56,6 +57,25 @@
             height: 100%;
             font-size: 13px;
             color: #002D72;
+            .text{
+                padding: 18px 0;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@include media-lg{
+    .footer-bottom{
+        &-wrapper{
+            .columns-wrapper{
+                .column{
+                    width: 50%;
+                    &:last-child{
+                        width: 50%;
+                    }
+                }
+            }
         }
     }
 }
