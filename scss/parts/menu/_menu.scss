@@ -2,12 +2,28 @@
     background: $elements-color;
     height: $menu-height;
     border-bottom: 1px solid $menu-border-color;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
     &-wrapper{
         width: 1170px;
         height: 100%;
-        padding: 0 12px;
         position: relative;
-    
+        .menu-list-header{
+            margin-bottom: 15px;
+            height: 54px;
+            width: 100%;
+            background: #002D72;
+            padding: 0 18px;
+            i{
+                color: white;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+            }
+        }
         .menu-link{
             font-size: 12px;
             font-weight: 800;
@@ -45,4 +61,16 @@
         }
     }
     @import "menulist";
+}
+
+@include media-xl{
+    .menu{
+        height: unset;
+        margin-bottom: 15px;
+        background: transparent;
+        border: none;
+        &-wrapper{
+            padding: 0;
+        }
+    }
 }

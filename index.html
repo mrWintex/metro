@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>METRO Cash & Carry Online Store</title>
     <link rel="stylesheet" href="./css/Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="icon/styles.css">
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>METRO Cash & Carry Online Store</title>
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -53,8 +53,14 @@
               <i class="metro-profile"></i>
             </a>
           </div>
-
+          
         </div>
+      </div>
+      <!-- NAVIGATION TOP MOBILE -->
+      <div class="navigation-top-mobile d-flex d-xl-none justify-content-between">
+          <button id="metro-menu-button"><i class="metro-menu-2"></i></button>
+          <div class="h-100 d-flex align-items-center"><img src="./metro-ui/img/metro-logo.svg" alt=""></div>
+          <div class="h-100" style="width: 30px; visibility: hidden;"></div>
       </div>
 
       <!-- NAVIGATION BOTTOM --> 
@@ -81,102 +87,296 @@
           </div>
         </div>
       </div>
+      <!-- NAVIGATION BOTTOM MOBILE -->
+      <div class="navigation-bottom-mobile d-block d-xl-none">
+        <div class="d-flex justify-content-between align-items-center h-100">
+          <i class="metro-location"></i>
+          <i class="metro-profile"></i>
+        </div>
+      </div>
     </header>
-
     <!-- MENU -->
-    <div class="menu d-xl-flex d-none justify-content-center align-items-center">
-      <div class="menu-wrapper d-flex justify-content-start align-items-center">
-        <a href="#" class="menu-link d-flex justify-content-center align-items-center text-uppercase" id="menu-list-button"><i class="metro-menu"></i><span class="text">Product catalog</span></a>
-        <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-rating-line"></i><span class="text">METRO Brands</span></a>
-          <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-rating-line"></i><span class="text">All brands</span></a>
-          <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-horeca-filled"></i><span class="text">HoReCa Assortment</span></a>
-          <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-promotion"></i><span class="text">Promo</span></a>
-          <div class="menu-list" id="menu-list"S>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-4 p-0">
-                  <div class="list-group" role="tablist">
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center active show" id="list-meat-list" data-toggle="tab" href="#list-meat" role="tab"><i class="metro-category-meat-fish-poultry"></i>Meat, Seafood and Poultry</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-dairy-and-eggs"></i>Dairy and Eggs</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-frozen" role="tab"><i class="metro-category-frozen"></i>Frozen</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-bakery" role="tab"><i class="metro-category-bakery"></i>Bakery</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-fruits" role="tab"><i class="metro-category-fruits-and-vegetables"></i>Fruits and Vegetables</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-grocery"></i>Grocery</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-canned-food-oil-vinegar"></i>Canned Goods, Oil, Vinegar</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-sauces-and-spices"></i>Sauces and Spices</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-alcohol"></i>Alcohol</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-drinks"></i>Drinks</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-snacks-and-sweets"></i>Snacks, Cookies and Chips</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-household-goods"></i>Household Essentials</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-household"></i>Household Supplies</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-kitchenware"></i>Kitchen and Tableware</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-home-interior-and-textiles"></i>Interior, Furniture and Textiles</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-office"></i>Office Supplies</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-personal-hygiene"></i>Personal Care</a>
-                    <a class="menu-list-item list-group-item d-flex justify-content-start align-items-center" id="list-milk-list" data-toggle="tab" href="#list-milk" role="tab"><i class="metro-category-hobby-and-rest"></i>Hobbies and Rest</a>
-                  </div>
+    <div class="menu d-flex justify-content-center align-items-center">
+      <div class="menu-wrapper">
+          <div class="d-none d-xl-flex justify-content-start align-items-center h-100">
+            <a href="#" class="menu-link d-flex justify-content-center align-items-center text-uppercase" id="menu-list-button"><i class="metro-menu"></i><span class="text">Product catalog</span></a>
+            <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-rating-line"></i><span class="text">METRO Brands</span></a>
+            <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-rating-line"></i><span class="text">All brands</span></a>
+            <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-horeca-filled"></i><span class="text">HoReCa Assortment</span></a>
+            <a href="#" class="menu-link d-flex justify-content-center align-items-center"><i class="metro-promotion"></i><span class="text">Promo</span></a>
+          </div>
+          <div class="menu-list-header d-none justify-content-start align-items-center">
+            <i class="metro-close"></i>
+          </div>
+          <div class="menu-list" id="menu-list" style="display: none">
+                <div class="menu-list-item">
+                  <a href="#" class="menu-item-link d-flex justify-content-start align-items-center d-xl-none no-after"><strong style="font-weight: 900;">+ Quick order</strong></a>
                 </div>
-                <div class="col-4 p-0">
-                  <div class="tab-content list-group">
-                    <div class="tab-pane show active" id="list-meat" role="tabpanel">
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Sausages</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Pork</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Beef</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Other Meat</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Meat Delicacies</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Fish and Seafood</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Fish Delicacies</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a>
-                    </div>
-                    <div class="tab-pane" id="list-milk" role="tabpanel">
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Milk</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Cheese</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Cream</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Sour Cream</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Butter and Margarine</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Milk Drinks</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Yoghurts and Desserts</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Farmer Cheese</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Curds and Cottage Cheese</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Sweetened Condensed Milk</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Eggs</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Lactose-free Drinks and Food</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Yeast</a>
-                    </div>
-                    <div class="tab-pane" id="list-frozen" role="tabpanel">
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Vegetables and Greens</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Fruits and Berries</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Mushrooms</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Pastry and Dough</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Meat</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Poultry</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Fish and Seafood</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Icecream</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Ice</a>
-                    </div>
-                    <div class="tab-pane" id="list-bakery" role="tabpanel">
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Bread</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Desserts and Baked Goods</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Frozen Bread and Pastries</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Crisp Bread and Snacks</a>
-                    </div>
-                    <div class="tab-pane" id="list-fruits" role="tabpanel">
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Fresh Vegetables</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Greens</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Salads</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Mushrooms</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Fruits and Berries</a>
-                      <a href="#" class="list-group-item d-flex justify-content-start align-items-center border-left">Dried Fruits</a>
-                    </div>
+                <div class="menu-list-item">
+                  <a href="#" class="menu-item-link d-flex justify-content-start align-items-center d-xl-none root no-after"><i class="metro-loyalty"></i>Favorites</a>
                 </div>
+                <div class="menu-list-item">
+                  <a href="#" class="menu-item-link d-flex justify-content-start align-items-center d-xl-none root no-after"><i class="metro-list"></i> List</a>
                 </div>
-                <div class="col-4 p-0">
-                  <div class="list-group">
-                    
-                  </div>
+                <div class="menu-list-item">
+                  <a href="#" class="menu-item-link d-flex justify-content-start align-items-center d-xl-none root"><i class="metro-broshures"></i> General info</a>
                 </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-meat-fish-poultry"></i>Meat, Seafood and Poultry</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-dairy-and-eggs"></i>Dairy and Eggs</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Milk</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Cheese</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Cream</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sour Cream</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Butter and Margarine</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Milk Drinks</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Yoghurts and Desserts</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Farmer Cheese</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Curds and Cottage Cheese</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sweetened Condensed Milk</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Eggs</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Lactose-free Drinks and Food</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Yeast</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-frozen"></i>Frozen</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Vegetables and Greens</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fruits and Berries</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Mushrooms</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pastry and Dough</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Icecream</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ice</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-bakery"></i>Bakery</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-fruits-and-vegetables"></i>Fruits and Vegetables</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-grocery"></i>Grocery</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-canned-food-oil-vinegar"></i>Canned Goods, Oil, Vinegar</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-sauces-and-spices"></i>Sauces and Spices</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-alcohol"></i>Alcohol</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-drinks"></i>Drinks</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-snacks-and-sweets"></i>Snacks, Cookies and Chips</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-household-goods"></i>Household Essentials</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-household"></i>Household Supplies</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-kitchenware"></i>Kitchen and Tableware</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-home-interior-and-textiles"></i>Interior, Furniture and Textiles</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-office"></i>Office Supplies</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-personal-hygiene"></i>Personal Care</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
+                </div>
+                <div class="menu-list-item">
+                  <a class="menu-item-link d-flex justify-content-start align-items-center root" role="tab"><i class="metro-category-hobby-and-rest"></i>Hobbies and Rest</a>
+                  <ul class="sub-menu">
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Sausages</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Pork</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Beef</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Chicken and Poultry</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Other Meat</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Meat Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish and Seafood</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Fish Delicacies</a></li>
+                      <li class="sub-menu-item"><a href="#" class="menu-item-link d-flex justify-content-start align-items-center border-left">Ready-to-cook Food</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -196,53 +396,82 @@
             </ol>
           </div>
           <!-- PRODUCT DETAIL -->
-          <div class="product product-detail d-flex justify-content-start align-items-center content-width content-background content-margin-btm">
+          <div class="product product-detail content-width content-background content-margin-btm">
             <div class="container-fluid h-100">
               <div class="row h-100">
                 <!-- PRODUCT DETAIL - PHOTO -->
-                <div class="product-photo-container col-6 d-flex justify-content-between align-items-start" >
-                  <div class="photo-selector">
-                    <div class="photo-option" data-photo-id="1"><img class="img-fluid" src="./metro-ui/img/ua_pim_285671001001_01 selector.png" alt="photo1"></div>
-                    <div class="photo-option" data-photo-id="2"><img class="img-fluid" src="./metro-ui/img/ua_pim_285671001001_02 selector.png" alt="photo1"></div>
-                    <div class="photo-option" data-photo-id="2"><img class="img-fluid" src="./metro-ui/img/ua_pim_285671001001_02 selector.png" alt="photo1"></div>
-                  </div>
-                  <div class="product-photo h-100 w-100">
-                    <div class="photo-container h-100 w-100 position-relative">
-                      <div class="photo-wrapper h-100 align-items-center d-flex justify-content-center" id="product-photo-1">
-                        <img src="./metro-ui/img/ua_pim_285671001001_01.png" alt="photo1" style="display: none;">
-                        <img class="img-fluid"src="./metro-ui/img/ua_pim_285671001001_01-display.png" alt="photo1">
+                <div class="product-photo-container col-12 col-md-6">
+                  <div class="container-fluid h-100 product-photo-wrapper">
+                    <div class="row h-100 m-auto">
+                      <div class="photo-selector d-none d-md-block">
+                        <div class="photo-option" data-photo-id="1"><img class="img-fluid" src="./metro-ui/img/ua_pim_285671001001_01 selector.png" alt="photo1"></div>
+                        <div class="photo-option" data-photo-id="2"><img class="img-fluid" src="./metro-ui/img/ua_pim_285671001001_02 selector.png" alt="photo1"></div>
+                        <div class="photo-option" data-photo-id="3"><img class="img-fluid" src="./metro-ui/img/ua_pim_285671001001_02 selector.png" alt="photo1"></div>
                       </div>
-                      <div class="photo-wrapper h-100 w-100 align-items-center d-none justify-content-center" id="product-photo-2" style="display: none;">
-                        <img src="./metro-ui/img/ua_pim_285671001001_10.png" alt="photo1" style="display: none;">
-                        <img class="img-fluid"src="./metro-ui/img/ua_pim_285671001001_02-display.png" alt="photo1">
+                      <div class="product-photo h-100">
+                        <div class="photo-container h-100 position-relative" id="photo-slick-container">
+                          <div class="slick-item-wrapper" id="product-photo-1">
+                            <div class="photo-wrapper h-100 align-items-center d-flex justify-content-center" >
+                              <img src="./metro-ui/img/ua_pim_285671001001_01.png" alt="photo1" style="display: none; z-index: -1;">
+                              <img class="img-fluid product-image"src="./metro-ui/img/ua_pim_285671001001_01-display.png" alt="photo1">
+                            </div>
+                          </div>
+                          <div class="slick-item-wrapper" id="product-photo-2">
+                            <div class="photo-wrapper h-100 w-100 align-items-center d-flex justify-content-center" >
+                              <img src="./metro-ui/img/ua_pim_285671001001_10.png" alt="photo1" style="display: none">
+                              <img class="img-fluid product-image"src="./metro-ui/img/ua_pim_285671001001_02-display.png" alt="photo1">
+                            </div>
+                          </div>
+                          <div class="slick-item-wrapper" id="product-photo-3">
+                            <div class="photo-wrapper h-100 w-100 align-items-center d-flex justify-content-center">
+                              <img src="./metro-ui/img/ua_pim_285671001001_10.png" alt="photo1" style="display: none;">
+                              <img class="img-fluid product-image"src="./metro-ui/img/ua_pim_285671001001_02-display.png" alt="photo1">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mobile-product-detail-right d-block d-md-none">
+                        <div class="product-user-buttons d-flex justify-content-end align-items-end flex-column">
+                          <button><i class="metro-loyalty"></i></button>
+                          <button><i class="metro-list"></i></button>
+                        </div>
+                        <div class="product-num-in-box d-flex justify-content-between align-items-center">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <i class="metro-package align-self-start"></i>
+                            <span class="text">Num. of items in box: </span>
+                        </div>
+                        <span class="num-of-items align-self-end">15</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- PRODUCT DETAIL - INFO -->
-                <div class="product-info col-6 d-flex flex-column">
+                <div class="product-info col-12 col-md-6 d-flex justify-content-md-start flex-column">
                   <div class="product-info-header d-flex justify-content-between">
-                    <h3 class="flex-grow-0">Metro Chef leaf frozen dough 1000g</h3>
-                    <div class="product-user-buttons d-flex justify-content-end align-items-start">
-                      <button><i class="metro-loyalty"></i></button>
-                      <button><i class="metro-list"></i></button>
+                      <h3 class="flex-grow-0">Metro Chef leaf frozen dough 1000g</h3>
+                      <div class="product-user-buttons d-none d-md-flex justify-content-end align-items-start">
+                        <button><i class="metro-loyalty"></i></button>
+                        <button><i class="metro-list"></i></button>
+                      </div>
+                  </div>
+                  <div class="product-info-bottom d-flex justify-content-between align-items-start flex-md-column">
+                    <div class="product-article-code">
+                      Article code: <span>403917</span>
+                    </div>
+                    <div class="product-price-section d-flex justify-content-between align-items-start">
+                      <a href="#" class="d-none d-md-flex justify-content-center align-items-start">
+                        <i class="metro-print-document"></i>
+                        Print page
+                      </a>
+                      <ul>
+                        <li><strong>82,90 грн</strong> <small>x 1 pc</small></li>
+                        <li><strong>78,90 грн</strong> <small>x 2 pc</small></li>
+                        <li><strong>64,90 грн</strong> <small>x 5 pc</small></li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="product-article-code">
-                    Article code: <span>403917</span>
-                  </div>
-                  <div class="product-price-section d-flex justify-content-between align-items-start">
-                    <a href="#" class="d-flex justify-content-center align-items-start">
-                      <i class="metro-print-document"></i>
-                      Print page
-                    </a>
-                    <ul>
-                      <li><strong>82,90 грн</strong> <small>x 1 pc</small></li>
-                      <li><strong>78,90 грн</strong> <small>x 2 pc</small></li>
-                      <li><strong>64,90 грн</strong> <small>x 5 pc</small></li>
-                    </ul>
-                  </div>
-                  <div class="product-num-in-box d-flex justify-content-between align-items-center">
+                  <div class="product-num-in-box d-md-flex justify-content-between align-items-center d-none">
                     <div class="d-flex justify-content-between align-items-center">
                       <i class="metro-package"></i>
                     <span class="text">Num. of items in box: </span>
@@ -276,27 +505,27 @@
               </div>
               <div class="other-products-content recommendation-slick">
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">1. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">2. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">3. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">4. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">5. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
@@ -310,27 +539,27 @@
               </div>
               <div class="other-products-content flex-grow-1 recommendation-slick">
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">1. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">2. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">3. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">4. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
                 <div class="other-products-item d-flex flex-column justify-content-start align-items-center">
-                  <img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item">
+                  <a href="#"><img src="https://cdn.metro-group.com/ua/ua_pim_306201001001_01?w=190&amp;h=130&amp;format=jpg&amp;quality=90" alt="recomendation-item"></a>
                   <span class="product-name"><a href="#">5. Metro Chef Milk 2,5% 1000g</a></span>
                   <span class="product-price">34,90 грн<span class="count">x 1</span></span>
                 </div>
@@ -346,7 +575,7 @@
       <div class="footer-top d-flex justify-content-center">
         <div class="footer-top-wrapper d-flex justify-content-start align-items-center">
           <img class="footer-logo" src="./metro-ui/img/metro-logo.svg" alt="metro-logo">
-          <ul class="footer-net-list list-inline d-block d-sm-flex justify-content-around">
+          <ul class="footer-net-list list-inline d-block d-md-block d-flex justify-content-around">
             <li class="net-list-item list-inline-item"><a href="#">Facebook</a></li>
             <li class="net-list-item list-inline-item"><a href="#">Instagram</a></li>
             <li class="net-list-item list-inline-item"><a href="#">Blog</a></li>
@@ -425,6 +654,21 @@
                     slidesToShow: 2
                  }
                }
+             ]
+           });
+           $("#photo-slick-container").slick({
+             arrows: false,
+             slidesToShow: 0,
+             slidesToShow: 1,
+             swipe: false,
+             responsive: [
+               {
+                 breakpoint: 768,
+                 settings: {
+                   arrows: true,
+                   swipe: true,
+                  }
+                },
              ]
            });
         </script>

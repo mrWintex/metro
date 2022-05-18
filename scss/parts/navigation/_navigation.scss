@@ -1,6 +1,8 @@
 .navigation{
     @import "navigation-top";
+    @import "navigation-top-mobile";
     @import "navigation-bottom";
+    @import "navigation-bottom-mobile";
 }
 
 @include media-xxl{

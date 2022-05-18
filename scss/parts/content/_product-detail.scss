@@ -4,9 +4,13 @@
     .product-photo-container{
         padding: 0;
         height: 100%;
+        .product-photo-wrapper{
+            padding: 0;
+        }
         .photo-selector{
             padding: 30px 0 40px;
             min-width: 85px;
+            max-width: 85px;
             .photo-option{
                 border: 1px solid white;
                 cursor: pointer;
@@ -17,8 +21,33 @@
             }
         }
         .product-photo{
+            padding: 0;
+            width: calc(100% - 85px);
             .photo-container{
                 padding-right: 40px;
+                button{
+                    display: block;
+                    position: absolute;
+                    top: 40%;
+                    font-size: 0;
+                    z-index: 10;
+                    &::after{
+                        font-family: 'metro-ua';
+                        color: $link-color;
+                        font-size: 1.3rem;
+                        display: inline-block;
+                        content: '\22';
+                    }
+                    &.slick-prev{
+                        left: 0;
+                        &::after{
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &.slick-next{
+                        right: 40px;
+                    }
+                }
             }
         }
     }
@@ -33,10 +62,9 @@
                 font-weight: 800;
                 color: #022E73;
                 margin: 0;
-                height: 58px;
                 line-height: 29px;
             }
-            .product-user-buttons{
+            @at-root .product-user-buttons{
                 padding-left: 100px;
                 padding-top: 5px;
                 button{
@@ -63,6 +91,7 @@
             max-width: 360px;
             margin-top: 30px;
             margin-bottom: 20px;
+            width: 100%;
             a{
                 color: $link-color;
                 text-decoration: none;
@@ -92,13 +121,14 @@
                 }
             }
         }
-        .product-num-in-box{
+        @at-root .product-num-in-box{
             max-width: 360px;
             position: relative;
             line-height: 20px;
             padding: 5px 0;
             i{
                 margin-right: 8px;
+                height: 100%;
             }
             &::after{
                 content: '';
@@ -114,6 +144,86 @@
             }
             .num-of-items{
                 font-size: 14px;
+            }
+        }
+    }
+}
+
+@include media-md{
+    .product-detail{
+        height: $product-detail-height;
+        margin-bottom: $section-margin-bottom;
+        .product-photo-container{
+            padding: 0;
+            height: 220px;
+            .product-photo{
+                width: 65%;
+            }
+            .mobile-product-detail-right{
+                width: 35%;
+                padding: 0;
+            }
+            .product-image{
+                width: 198px;
+                height: auto;
+            }
+        }
+        .product-info{
+            .product-info-header{
+                margin-top: 20px;
+                h3{
+                    font-size: 20px;
+                }
+                @at-root .product-user-buttons{
+                    padding: 0;
+                    button{
+                        &:first-child{
+                            margin: 0;
+                        }
+                        margin: 0;
+                    }
+                }
+            }
+            .product-article-code{
+                padding-left: 0px;
+            }
+            .product-price-section{
+                max-width: unset;
+                width: auto;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .product-detail{
+        .product-info{
+            .product-info-header{
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .product-detail{
+        .product-info{
+            .product-info-header{
+                h3{
+                    font-size: 14px;
+                }
+            }
+            .product-price-section{
+                ul{
+                    li{
+                        strong{
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
         }
     }
