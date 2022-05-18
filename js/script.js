@@ -1,7 +1,8 @@
 $(function () {
     $(".photo-option").on("click", function () {
-        $(".slick-item-wrapper").removeClass("slick-active").removeClass("slick-current");
-        $("#product-photo-" + $(this).attr("data-photo-id")).addClass("slick-active").addClass("slick-current");
+        //$(".slick-item-wrapper").removeClass("slick-active").removeClass("slick-current");
+        //$("#product-photo-" + $(this).attr("data-photo-id")).addClass("slick-active").addClass("slick-current");
+        $('#photo-slick-container').slick('slickGoTo', $(this).attr("data-photo-id"));
     });
 
     shown = false;
