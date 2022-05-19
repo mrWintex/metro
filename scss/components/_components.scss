@@ -1,0 +1,12 @@
+#dark-filter{
+    position: fixed;
+    display: none;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.595);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    &.show{
+        display: block;
+    }
+}

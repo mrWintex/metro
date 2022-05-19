@@ -1,7 +1,5 @@
 $(function () {
     $(".photo-option").on("click", function () {
-        //$(".slick-item-wrapper").removeClass("slick-active").removeClass("slick-current");
-        //$("#product-photo-" + $(this).attr("data-photo-id")).addClass("slick-active").addClass("slick-current");
         $('#photo-slick-container').slick('slickGoTo', $(this).attr("data-photo-id"));
     });
 
@@ -26,10 +24,12 @@ $(function () {
         if(shown){
             $(".navigation-bottom-mobile").removeClass("d-block").addClass("d-none"); 
             $(".menu-list-header").removeClass("d-none").addClass("d-flex");
+            $(".menu").removeClass("d-none").addClass("d-flex");
         }
         else{
             $(".menu-list-header").addClass("d-none").removeClass("d-flex");
             $(".navigation-bottom-mobile").removeClass("d-none").addClass("d-block"); 
+            $(".menu").removeClass("d-flex").addClass("d-none");
         }
     });
     $(".menu-item-link.root").on("click", function(){
@@ -37,4 +37,16 @@ $(function () {
         $(".menu-item-link.root").removeClass("active");
         $(this).toggleClass("active", !$hasClass);
     });
+    $("#metro-search").on("focusin", function(){
+        ShowDarkFilter();
+    }).on("focusout", function(){
+        ShowDarkFilter(false);
+    });
 });
+
+function ShowDarkFilter(show = true){
+    if(show)
+        $("#dark-filter").addClass("show");
+    else
+        $("#dark-filter").removeClass("show");
+}
