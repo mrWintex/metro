@@ -128,6 +128,8 @@ a {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 0 25px 0 15px;
+  position: relative;
+  cursor: pointer;
 }
 
 .navigation .navigation-top .navigation-wrapper .navigation-main .navigation-language-selector .text {
@@ -273,15 +275,33 @@ a {
   top: 1px;
   right: 5px;
   height: 38px;
+  background-color: #F2F7FF;
 }
 
-.navigation .navigation-bottom-wrapper .search-input-container .search-input-wrapper .search-right select {
-  background-color: #F2F7FF;
+.navigation .navigation-bottom-wrapper .search-input-container .search-input-wrapper .search-right .cstm-select {
   border-radius: 0;
   border: none;
-  height: 38px;
+  height: 100%;
   width: 130px;
   font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+
+.navigation .navigation-bottom-wrapper .search-input-container .search-input-wrapper .search-right .cstm-select .text {
+  height: 100%;
+  padding-left: 15px;
+}
+
+.navigation .navigation-bottom-wrapper .search-input-container .search-input-wrapper .search-right .cstm-select::after {
+  font-family: 'metro-ua';
+  content: '\22';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
 }
 
 .navigation .navigation-bottom-wrapper .search-input-container .search-input-wrapper .search-right .search-button {
@@ -300,6 +320,12 @@ a {
 @media only screen and (max-width: 1469px) {
   .navigation .navigation-bottom-wrapper .search-input-container {
     margin-right: 45px;
+  }
+}
+
+@media only screen and (max-width: 1469px) {
+  .navigation .navigation-bottom-wrapper .search-input-container .search-input-wrapper .search-input:focus {
+    width: 840px;
   }
 }
 
@@ -327,16 +353,6 @@ a {
   background: #FFFFFF;
   height: 55px;
   border-bottom: 1px solid #E6E7EA;
-  user-select: none;
-  /* supported by Chrome and Opera */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
 }
 
 .menu-wrapper {
@@ -409,6 +425,16 @@ a {
   padding: 15px 0;
   width: 958px;
   z-index: 100;
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
 }
 
 .menu .menu-list .menu-list-item {
@@ -1209,9 +1235,33 @@ footer .footer-bottom-wrapper .footer-bottom-btm {
   color: #002D72;
 }
 
-footer .footer-bottom-wrapper .footer-bottom-btm .text {
+footer .footer-bottom-wrapper .footer-bottom-btm .info {
   padding: 18px 0;
   line-height: 20px;
+}
+
+footer .footer-bottom-wrapper .footer-bottom-btm .cstm-select {
+  margin-right: 20px;
+  position: relative;
+  color: #0869FE;
+  cursor: pointer;
+}
+
+footer .footer-bottom-wrapper .footer-bottom-btm .cstm-select::before {
+  font-family: 'metro-ua';
+  content: '\22';
+  position: absolute;
+  font-size: 1rem;
+  left: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
+footer .footer-bottom-wrapper .footer-bottom-btm .cstm-select .select-box {
+  bottom: 110% !important;
+  top: unset !important;
+  right: 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1235,5 +1285,62 @@ footer .footer-bottom-wrapper .footer-bottom-btm .text {
 
 #dark-filter.show {
   display: block;
+}
+
+.select-box {
+  display: none;
+  border: 1px solid #b6b6b6;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 80%;
+  width: 77px;
+  z-index: 50;
+}
+
+.select-box.bottom {
+  bottom: 100%;
+  top: unset;
+}
+
+.select-box .options-container .option {
+  height: 35px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  font-size: 13px;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  z-index: 50;
+}
+
+.select-box .options-container .option:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: 0;
+  margin-right: 0;
+  background: #181818;
+  height: 1px;
+  width: 60%;
+}
+
+.select-box .options-container .option:hover {
+  background: #5897FB;
+  color: white;
+}
+
+.select-box.active {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

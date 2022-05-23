@@ -57,9 +57,29 @@
             height: 100%;
             font-size: 13px;
             color: #002D72;
-            .text{
+            .info{
                 padding: 18px 0;
                 line-height: 20px;
+            }
+            .cstm-select{
+                margin-right: 20px;
+                position: relative;
+                color: $link-color;
+                cursor: pointer;
+                &::before{
+                    font-family: 'metro-ua';
+                    content: '\22';
+                    position: absolute;
+                    font-size: 1rem;
+                    left: -30px;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(90deg);
+                }
+                .select-box{
+                    bottom: 110% !important;
+                    top: unset !important;
+                    right: 0;
+                }
             }
         }
     }

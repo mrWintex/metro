@@ -8,6 +8,7 @@ $(function () {
         shown = !shown;
         $("#menu-list-button").toggleClass("active", shown);
         $("#menu-list").css("display", (shown ? "block" : "none"));
+        $(".menu-list-header").addClass("d-none").removeClass("d-flex");
     });
     $(document).on("click", function (e) {
         if ($(e.target).closest("#menu-list").length === 0 && $(e.target).closest("#menu-list-button").length === 0 && $(e.target).closest("#metro-menu-button").length === 0) {

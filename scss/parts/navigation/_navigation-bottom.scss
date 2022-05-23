@@ -62,13 +62,28 @@
                     top: 1px;
                     right: 5px;
                     height: 38px;
-                    select{
-                        background-color: #F2F7FF;
+                    background-color: #F2F7FF;
+                    .cstm-select{
+                        .text{
+                            height: 100%;
+                            padding-left: 15px;
+                        }
                         border-radius: 0;
                         border: none;
-                        height: 38px;
+                        height: 100%;
                         width: 130px;
                         font-size: 14px;
+                        position: relative;
+                        cursor: pointer;
+                        &::after{
+                            font-family: 'metro-ua';
+                            content: '\22';
+                            color: black;
+                            position: absolute;
+                            top: 50%;
+                            right: 15px;
+                            transform: translateY(-50%) rotate(90deg);
+                        }
                     }
                     .search-button{
                         width: 32px;
@@ -92,6 +107,22 @@
         &-wrapper{
             .search-input-container{
                 margin-right: 45px;
+            }
+        }
+    }
+}
+
+@include media-xxl{
+    .navigation-bottom{
+        &-wrapper{
+            .search-input-container{
+                .search-input-wrapper{
+                    .search-input{
+                        &:focus{
+                            width: 840px;
+                        }
+                    }
+                }
             }
         }
     }
